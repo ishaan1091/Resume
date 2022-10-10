@@ -1,0 +1,213 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% Version 1.2
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{ishaan-kamra-resume}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Ishaan}{Kamra}{ \urlstyle{same}
+    \href{https://www.linkedin.com/in/ishaankamra/}{Linkedin:// \color{blue}\underline{ishaankamra} } |
+    \href{https://github.com/ishaan1091}{ Github:// \color{blue}\underline{ishaan1091 }} |
+    \href{https://leetcode.com/ishaan1091/}{ Leetcode:// \color{blue}\underline{ishaan1091} } |
+    \href{https://codeforces.com/profile/ishaank10}{Codeforces:// \color{blue}\underline{ishaank10}}\\ \href{https://www.codechef.com/users/ishaank10}{Codechef:// \color{blue}\underline{ishaank10} } |
+    \href{mailto:ishaan1091@gmail.com}{ Email: \color{blue}\underline{ishaan1091@gmail.com} } |
+    \href{tel:+919810103392}{ Phone: \color{blue}\underline{9810103392}}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth}
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     EDUCATION
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \section{Education}
+
+    \subsection{Delhi Technological}
+    \subsection{University}
+    \descript{B.Tech in Mathematics and Computing}
+    \location{Aug 2019 - May 2023}
+    \location{CGPA - \textbf{9.12/10} (Up to 6th Sem)}
+    \sectionsep
+
+    \subsection{Venkateshwar}
+    \subsection{International School}
+    \descript{CBSE Class XII - \textbf{95\%}}
+    \location{May 2019}
+    \descript{CBSE Class X - CGPA - \textbf{10/10}}
+    \location{May 2017}
+    \sectionsep
+
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     LINKS
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \section{Links}
+    Linkedin:// \href{https://www.linkedin.com/in/ishaankamra/}{\bf ishaankamra} \\
+    Github:// \href{https://github.com/ishaan1091}{\bf ishaan1091} \\
+    Leetcode://  \href{https://leetcode.com/ishaan1091/}{\bf ishaan1091} \\
+    Codeforces://  \href{https://codeforces.com/profile/ishaank10}{\bf ishaank10} \\
+    Codechef://  \href{https://www.codechef.com/users/ishaank10}{\bf ishaank10}
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     COURSEWORK
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \section{Coursework}
+    \subsection{Undergraduate}
+    Data Structures \\
+    Algorithm Design and Analysis \\
+    Object Oriented Programming \\
+    Database Management Systems \\
+    Operating Systems \\
+    Computer Networks \\
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     SKILLS
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \section{Skills}
+    \subsection{Programming}
+    C++ \textbullet{} JavaScript \textbullet{} Python \textbullet{} Matlab
+    \subsection{Web Technologies}
+    ReactJS \textbullet{} NodeJS \textbullet{} Django \textbullet{} Flask \\
+    ExpressJS \textbullet{} MySQL \textbullet{} MongoDB
+    \subsection{Other Technologies}
+    Selenium \textbullet{} Web Scraping \textbullet{} Data Science \\
+    Firebase \textbullet{} Deployment
+    \sectionsep
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %   EXTRA CURRICULAR ACTIVITIES
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \section{Extra Curricular Activities}
+    \subsection{Web Developer, Enactus}
+    \textbullet{} Developed MOOC website having \textbf{1000+ active users} for enactus NGO.
+    \subsection{Co-Head, Tech Team}
+    \subsection{Invictus}
+    \textbullet{} \textbf{Co-Led the tech team} to develop fest website with daily traffic of 500+.
+    \sectionsep
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     COLUMN TWO
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     EXPERIENCE
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \section{Experience}
+    \runsubsection{Sprinklr}
+    \descript{| Product Engineer Intern}
+    \location{Incoming Jan 23}
+    \vspace{\topsep} % Hacky fix for awkward extra vertical space
+    \begin{tightemize}
+        \item Will be joining Sprinklr in Jan as part of their Frontend team as a Product Engineer Intern.
+    \end{tightemize}
+    \sectionsep
+
+    \runsubsection{Aumyaa Consulting}
+    \descript{| Software Engineer Intern}
+    \location{Oct 2022 - Present | New Delhi, India}
+    \begin{tightemize}
+        \item Implemented custom \textbf{CRM cum ERP platform from scratch leading to automation of 80\% workflow for the risk assessment division}
+        \item Developed scalable architecture for workflow management using ReactJS, ExpressJS, MongoDB
+    \end{tightemize}
+    \sectionsep
+
+    \runsubsection{Wells Fargo}
+    \descript{| Software Engineering Intern }
+    \location{May 2022 - July 2022 | Hyderabad, India}
+    \begin{tightemize}
+        \item Implemented a \textbf{policy based authorization engine} which takes user entitlement rules and provides authorization token for access to applications
+        \item Completely automated 100\% of the authorization management and updating
+        \item Developed using \textbf{ReactJS, Django, CI/CD workflows and hosted on Azure}
+    \end{tightemize}
+    \sectionsep
+
+    \runsubsection{Botsfolio}
+    \descript{| Software Development Intern }
+    \location{Aug 2020 - Sep 2020 | Remote}
+    \begin{tightemize}
+        \item Worked on Social Media \textbf{Automation tools} and did extensive audience analysis with data collected from social media sites helping the company to grow its \textbf{social media out reach by 1000\%.}
+        \item Developed the software using \textbf{Python, Selenium, Web Scraping, Crobjobs}
+    \end{tightemize}
+    \sectionsep
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     PROJECTS
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \section{Projects}
+    \runsubsection{WorkZone} \\
+    A platform for small to mid-sized companies to manage communication and project collaboration. Developed the application from scratch. \\
+    \textbf{Tech Stack: HTML, CSS, Javascript, JQuery, Flask, MySQL}
+    \sectionsep
+
+    \runsubsection{Google Docs Clone} \\
+    Implemented Google Docs clone with Real-time editing, simultaneous multiuser edits, saving / printing documents. \\
+    \textbf{Tech Stack: ReactJS, NodeJS, MongoDB, Sockets}
+    \sectionsep
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     AWARDS
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \section{Academic Achievements}
+    \begin{itemize}
+        \item Maximum \textbf{Codeforces Rating 1693 (Expert)}
+              \begin{itemize}
+                  \item Codeforces Round 773 Div. 2 - \textbf{Global Rank 340}
+                  \item Codeforces Round 785 Div. 2 - \textbf{Global Rank 525}
+              \end{itemize}
+        \item Maximum \textbf{Codechef Rating 2164 (5 Star)}
+              \begin{itemize}
+                  \item March Lunchtime Division 1 - \textbf{Global Rank 147}
+                  \item Codechef Starters 29 Division 2 - \textbf{Global Rank 56}
+              \end{itemize}
+        \item Achieved \textbf{Global Rank 520 in Google Kickstart Round C 2022} and \textbf{Global Rank 480 in Google Codejam Round 1C 2022}
+    \end{itemize}
+    \sectionsep
+
+\end{minipage}
+\end{document}  \documentclass[]{article}
