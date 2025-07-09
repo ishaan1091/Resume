@@ -1,214 +1,146 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% LaTeX Template
-% Version 1.2
-%
-% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
-%
-% This template uses several fonts not included with Windows/Linux by
-% default. If you get compilation errors saying a font is missing, find the line
-% on which the font is used and either change it to a font included with your
-% operating system or comment the line out to use the default font.
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Known Issues:
-% 1. Overflows onto second page if any column's contents are more than the
-% vertical limit
-% 2. Hacky space on the first bullet point on the second column.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[letterpaper,10.8pt]{article}
 
-
-\documentclass[]{ishaan-kamra-resume}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
 \usepackage{fancyhdr}
- 
-\pagestyle{fancy}
-\fancyhf{}
- 
-\begin{document}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     TITLE NAME
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Ishaan}{Kamra}{ \urlstyle{same}
-    \href{https://www.linkedin.com/in/ishaankamra/}{Linkedin:// \color{blue}\underline{ishaankamra} } |
-    \href{https://github.com/ishaan1091}{ Github:// \color{blue}\underline{ishaan1091 }} |
-    \href{https://leetcode.com/ishaan1091/}{ Leetcode:// \color{blue}\underline{ishaan1091} } |
-    \href{https://codeforces.com/profile/ishaank10}{Codeforces:// \color{blue}\underline{ishaank10}}\\ \href{https://www.codechef.com/users/ishaank10}{Codechef:// \color{blue}\underline{ishaank10} } |
-    \href{mailto:ishaan1091@gmail.com}{ Email: \color{blue}\underline{ishaan1091@gmail.com} } |
-    \href{tel:+919810103392}{ Phone: \color{blue}\underline{+919810103392}}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-3pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     COLUMN ONE
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
 
-\begin{minipage}[t]{0.33\textwidth}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textbf{#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
 
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    %     EDUCATION
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-    \section{Education}
-
-    \subsection{Delhi Technological}
-    \subsection{University}
-    \descript{B.Tech in Mathematics and Computing}
-    \location{Aug 2019 - May 2023}
-    \location{CGPA - \textbf{8.91/10}}
-    \sectionsep
-
-    \subsection{Venkateshwar}
-    \subsection{International School}
-    \descript{CBSE Class XII - \textbf{95\%}}
-    \location{May 2019}
-    \descript{CBSE Class X - CGPA - \textbf{10/10}}
-    \location{May 2017}
-    \sectionsep
+\newcommand{\resumeSubheadingProject}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
 
 
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    %     LINKS
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
-    \section{Links}
-    Linkedin:// \href{https://www.linkedin.com/in/ishaankamra/}{\bf ishaankamra} \\
-    Github:// \href{https://github.com/ishaan1091}{\bf ishaan1091} \\
-    Leetcode://  \href{https://leetcode.com/ishaan1091/}{\bf ishaan1091} \\
-    Codeforces://  \href{https://codeforces.com/profile/ishaank10}{\bf ishaank10} \\
-    Codechef://  \href{https://www.codechef.com/users/ishaank10}{\bf ishaank10}
+\renewcommand{\labelitemii}{$\circ$}
 
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    %     COURSEWORK
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-    \section{Coursework}
-    \subsection{Undergraduate}
-    Data Structures \\
-    Algorithm Design and Analysis \\
-    Object Oriented Programming \\
-    Database Management Systems \\
-    Operating Systems \\
-    Computer Networks \\
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    %     SKILLS
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-    \section{Skills}
-    \subsection{Programming}
-    C++ \textbullet{} JavaScript \textbullet{} Python \textbullet{} Matlab
-    \subsection{Web Technologies}
-    ReactJS \textbullet{} NodeJS \textbullet{} Django \textbullet{} Flask \\
-    ExpressJS \textbullet{} MySQL \textbullet{} MongoDB
-    \subsection{Other Technologies}
-    Selenium \textbullet{} Web Scraping \textbullet{} Data Science \\
-    Firebase \textbullet{} Deployment
-    \sectionsep
+\begin{document}
 
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    %   EXTRA CURRICULAR ACTIVITIES
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Ishaan Kamra}} & Email : \href{mailto:ishaan1091@gmail.com}{\color{blue}\underline{ishaan1091@gmail.com}}\\
+  \href{https://www.linkedin.com/in/ishaankamra/}{Linkedin: \color{blue}\underline{ishaankamra}} & \href{tel:+919810103392}{Mobile : \color{blue}\underline{+91 9810103392}} \\
+   \href{https://leetcode.com/ishaan1091/}{LeetCode: \color{blue}\underline{ishaan1091}} & \href{https://github.com/ishaan1091}{Github: \color{blue}\underline{ishaan1091}}\\
+   \href{https://codeforces.com/profile/ishaank10}{Codeforces: \color{blue}\underline{ishaank10}} & \href{https://www.codechef.com/users/ishaank10}{Codechef: \color{blue}\underline{ishaank10}}
+\end{tabular*}
 
-    \section{Extra Curricular Activities}
-    \subsection{Web Developer, Enactus}
-    \textbullet{} Developed MOOC website having \textbf{1000+ active users} for enactus NGO.
-    \subsection{Co-Head, Tech Team}
-    \subsection{Invictus}
-    \textbullet{} \textbf{Co-Led the tech team} to develop fest website with daily traffic of 500+.
-    \sectionsep
 
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    %
-    %     COLUMN TWO
-    %
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.66\textwidth}
-
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    %     EXPERIENCE
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-    \section{Experience}
-    \runsubsection{Sprinklr}
-    \descript{| Product Engineer}
-    \location{Jul 2023 - Present | Gurgaon, India}
-    \vspace{\topsep} % Hacky fix for awkward extra vertical space
-    \begin{tightemize}
-        \item Working as part of the  Research Backend engineering team and responsible for handling, debugging and optimizing ElasticSearch.
-    \end{tightemize}
-    \sectionsep
-
-    \runsubsection{Sprinklr}
-    \descript{| Product Engineer Intern}
-    \location{Jan 2023 - Jun 2023 | Gurgaon, India}
-    \begin{tightemize}
-        \item Interned as part of the  Research Backend engineering team, working on technologies like MongoDB, ElasticSearch, Java, Spring, Redis, Kafka. Handled and built from scratch a framework for local and remote deployment of the microservice architecture.
-    \end{tightemize}
-    \sectionsep
-
-    \runsubsection{Aumyaa Consulting}
-    \descript{| Software Engineer Intern}
-    \location{Oct 2022 - Dec 2022 | New Delhi, India}
-    \begin{tightemize}
-        \item Implemented custom \textbf{CRM cum ERP platform from scratch leading to automation of 80\% workflow for the risk assessment division}
-        \item Developed scalable architecture for workflow management using ReactJS, ExpressJS, MongoDB
-    \end{tightemize}
-    \sectionsep
-
-    \runsubsection{Wells Fargo}
-    \descript{| Software Engineering Intern }
-    \location{May 2022 - July 2022 | Hyderabad, India}
-    \begin{tightemize}
-        \item Implemented a \textbf{policy based authorization engine} which takes user entitlement rules and provides authorization token for access to applications
-        \item Completely automated 100\% of the authorization management and updating
-        \item Developed using \textbf{ReactJS, Django, CI/CD workflows and hosted on Azure}
-    \end{tightemize}
-    \sectionsep
-
-    \runsubsection{Botsfolio}
-    \descript{| Software Development Intern }
-    \location{Aug 2020 - Sep 2020 | Remote}
-    \begin{tightemize}
-        \item Worked on Social Media \textbf{Automation tools} and did extensive audience analysis with data collected from social media sites helping the company to grow its \textbf{social media out reach by 1000\%.}
-        \item Developed the software using \textbf{Python, Selenium, Web Scraping, Crobjobs}
-    \end{tightemize}
-    \sectionsep
-
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    %     PROJECTS
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-    \section{Projects}
-    \runsubsection{WorkZone}
-    \href{https://github.com/ishaan1091/employee-management-system}{| Link} \\
-    A platform for small to mid-sized companies to manage communication and project collaboration. Developed the application from scratch. \\
-    \textbf{Tech Stack: HTML, CSS, Javascript, JQuery, Flask, MySQL}
-    \sectionsep
-
-    \runsubsection{Google Docs Clone}
-    \href{https://github.com/ishaan1091/google-docs-clone}{| Link} \\
-    Implemented Google Docs clone with Real-time editing, simultaneous multiuser edits, saving / printing documents. \\
-    \textbf{Tech Stack: ReactJS, NodeJS, MongoDB, Sockets}
-    \sectionsep
-
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    %     AWARDS
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-    \section{Academic Achievements}
-    \begin{itemize}
-        \item Maximum \textbf{Codeforces Rating 1693 (Expert)} and Maximum \textbf{Codechef Rating 2164 (5 Star)}
-        \item Achieved \textbf{Global Rank 520 in Google Kickstart Round C 2022} and \textbf{Global Rank 480 in Google Codejam Round 1C 2022}
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Product Engineer}{Jan 2023 – Present}
+    {Sprinklr}{}
+    \begin{itemize}[itemsep=0pt]
+      \item  \textbf{Engineered and led} the design and development of a \textbf{scalable Event-Based Workflow system, handling 10,000 RPS} for \href{https://www.sprinklr.com/products/consumer-intelligence/surveys/} {Customer Feedback Management} product. Integrated with Salesforce and third-party event sources, enabling users to automate tasks like survey distribution and messaging across channels \textbf{(WhatsApp, Email, SMS)}.
+      \item \textbf{Led and developed} various survey distribution methods for a \href{https://www.sprinklr.com/products/consumer-intelligence/surveys/}{Customer Feedback Management}, \textbf{achieving 1M+ distributions per day and 99.99\% uptime} across social media channels (WhatsApp, Email, SMS). A key achievement was implementing a \textbf{GenAI-powered conversational survey} on WhatsApp, which improved the survey \textbf{completion rate by 25\%}.
+      \item Developed advanced real-time crisis detection and alerting features for a \href{https://www.sprinklr.com/teams/marketing/crisis-management/}{Crisis Management} product, \textbf{analyzing over 400 million social messages daily}. Built in-platform and email-based sharing capabilities to ensure timely and efficient critical communication.
+      \item Implemented a framework leveraging Shadow and Canary deployment strategies to \textbf{automate the testing and deployment process for critical components with 0 downtime}. Resulted in seamless deployment, real-time analysis, and immediate alerts for any failures. \textbf{Reduced manual effort from days to hours.}
+      \item As part of Infra Team, reduced \textbf{Elasticsearch space usage by 30\%}, \textbf{saving more than \$100k per month}. Improved system resilience by \textbf{reducing various system failures by 80\%}. Implemented a robust alerting mechanism for job failures to address issues proactively.
+      \item Currently serve as a \textbf{Lead L1 On-Call Engineer}, participating in \textbf{24/7 on-call cycles}, supervising L2 support engineer to ensure rapid resolution of product issues, infrastructure incidents, and alerts across Insights Suite.
+      \item \textbf{Mentored interns (6 and 2-month durations)}, accelerating onboarding and technical proficiency.
+      \item Engineered a data monitoring service to proactively detect and alert on anomalies in customer's social media data consumption from Sprinklr platform. This included the development of a real-time Kibana dashboard for visualization, providing actionable insights and \textbf{eliminating 3-4 hours of manual effort} through proactive alerting.
+      \item Designed and implemented an automated framework for exception and log tracking. This system automatically queries logs, generates Jira tickets with appropriate assignees, and sends notifications, \textbf{completely eliminating a manual 2-3 hour daily process.}
     \end{itemize}
-    \sectionsep
+  \resumeSubheading
+    {Product Engineering Summer Intern}{May 2022 – July 2022}
+    {Sprinklr}{}
+    \begin{itemize}[itemsep=0pt]
+      \item Enhanced the functionality of Sprinklr's on-call tracking site by introducing key features, an advanced filter section, improved UI/UX, and a streamlined query-writing system like Kibana. I also developed the backend for the ML Data Anotation tool.
+    \end{itemize}
+\resumeSubHeadingListEnd
 
-\end{minipage}
-\end{document}  \documentclass[]{article}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Delhi Technological University}{Delhi, India }
+      {B.Tech in Mathematics and Computing,  CGPA: 8.91}{2019-2023}
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Areas of Interest}{Data Structures and Algorithms, OOPS, Operating Systems, Backend Development, Multi-Threading, Concurrency, Cloud Computing, Automations}
+	\resumeSubItem{Programming Languages}{C, C++, Java, Python}
+	\resumeSubItem{Tools and Technologies}{Java Spring Boot, MongoDB, Elasticsearch, Kafka, Redis, Git, GraphQL, Jenkins}
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+  \resumeSubheadingProject
+    {\href{}{StackOverflow Data Processing Pipeline}}{}		\begin{itemize}[itemsep=0pt]
+		\item   Developed a robust data processing pipeline leveraging Java Spring Boot, Kafka, Elasticsearch, and Redis. The project involved extracting questions and answers from Stack Overflow, transmitting the data to Kafka, and subsequently processing and storing it in Elasticsearch through Kafka consumers. Implemented APIs for searching and various data operations.
+	\end{itemize}
+\resumeSubHeadingListEnd
+
+
+\end{document}

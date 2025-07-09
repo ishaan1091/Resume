@@ -1,9 +1,7 @@
 # LaTeX Resume
 
--   To run the .tex file run xelatex command inside your terminal at the root of your project directory.
+To view the compiled pdf from .tex file run the following command
 
--   As input give the name of the file you want to compile that has the tex code in it.
-
-## Credits
-
-[Debarghya Das](https://github.com/deedydas/Deedy-Resume)
+```
+xelatex IshaanKamra.pdf
+```
